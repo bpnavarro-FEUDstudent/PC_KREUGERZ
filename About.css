@@ -1,0 +1,235 @@
+#About_Header{
+
+    text-align:center;
+    padding:80px 20px 60px;
+    background:#141414;
+
+}
+
+#About_Header h2{
+
+    color:#ffffff;
+    font-size:4rem;
+    letter-spacing:5px;
+    margin-bottom:20px;
+
+}
+
+#About_Header p{
+
+    color:#cfcfcf;
+    font-size:1.2rem;
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+
+}
+
+#About_Company{
+
+    width:85%;
+    margin:80px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+
+}
+
+.About_Text{
+
+    flex:1;
+    min-width:350px;
+
+}
+
+.About_Text h3{
+
+    color:#d81616;
+    font-size:2.5rem;
+    margin-bottom:25px;
+
+}
+
+.About_Text p{
+
+    color:white;
+    font-size:1.1rem;
+    line-height:2;
+    margin-bottom:20px;
+    text-align:justify;
+
+}
+
+.About_Image{
+
+    flex:1;
+    text-align:center;
+    min-width:300px;
+
+}
+
+.About_Image img{
+
+    width:320px;
+    max-width:100%;
+
+}
+
+#Mission_Vision{
+
+    width:85%;
+    margin:80px auto;
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+
+}
+
+.Info_Box{
+
+    flex:1;
+    background:#1f1f1f;
+    padding:40px;
+    border-radius:20px;
+    border-top:5px solid #d81616;
+
+}
+
+.Info_Box h3{
+
+    color:#d81616;
+    margin-bottom:20px;
+    font-size:2rem;
+
+}
+
+.Info_Box p{
+
+    color:white;
+    line-height:1.8;
+    text-align:justify;
+
+}
+
+#Why_Choose{
+
+    width:90%;
+    margin:100px auto;
+
+}
+
+#Why_Choose h2{
+
+    color:white;
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:60px;
+    letter-spacing:3px;
+
+}
+
+#Reasons{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+
+}
+
+.Reason_Box{
+
+    background:#1f1f1f;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    transition:.3s;
+
+}
+
+.Reason_Box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.Reason_Box h3{
+
+    color:#d81616;
+    margin-bottom:20px;
+    font-size:1.7rem;
+
+}
+
+.Reason_Box p{
+
+    color:white;
+    line-height:1.8;
+
+}
+
+#Quote{
+
+    margin:100px auto;
+    text-align:center;
+    width:80%;
+
+}
+
+#Quote h2{
+
+    color:white;
+    font-size:2.7rem;
+    letter-spacing:3px;
+    margin-bottom:15px;
+
+}
+
+#Quote p{
+
+    color:#d81616;
+    font-size:1.2rem;
+    font-style:italic;
+
+}
+
+@media(max-width:768px){
+
+    #About_Header h2{
+
+        font-size:2.8rem;
+
+    }
+
+    .About_Text{
+
+        min-width:100%;
+
+    }
+
+    .About_Image{
+
+        min-width:100%;
+
+    }
+
+    .About_Image img{
+
+        width:220px;
+
+    }
+
+    #Why_Choose h2{
+
+        font-size:2.2rem;
+
+    }
+
+    #Quote h2{
+
+        font-size:1.8rem;
+
+    }
+
+}
