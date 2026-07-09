@@ -4,12 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PC Kreugerz</title>
+        
+        <link rel="stylesheet" href="Index.css">
     </head>
 
     <body>
-        <nav>
-            <img src="PC Kreugerz Logo.png" alt="PC Kreugerz Logo">
-            <h1>PC KREUGERZ</h1>
+        <header>
+            <nav>
+                <img src="PC Kreugerz Logo.png" alt="PC Kreugerz Logo">
+                <h1>PC KREUGERZ</h1>
 
                 <a href="Cart.html">
                     <img src="Icons/Cart_Icon.png" alt="Cart_Icon">
@@ -20,7 +23,8 @@
                 <a href="Search.html">
                     <img src="Icons/Search_Icon.png" alt="Search_Icon">
                 </a>
-        </nav>
+            </nav>
+        </header>
 
         <main>
 
@@ -30,64 +34,79 @@
             </section>
 
             
-            <section id="FeaturedPC">
-                <h3>Featured PCS</h3>
+            <div class="FeaturedPC">
+                <h2>Featured PCS</h2>
+                <div class="FeaturedPC_slider">
+                    <div class="FeaturedPC_Container"> <!--Feature_PC Container START--> 
+                        <div class="FeaturedPC_Individual_Boxes">
+                                    <img class="FeaturedPC_images" src="Featured_PC_images/Dell_OptiPlex_3020_SFF.png" alt="Dell Optiplex 3020 Sff">
+                        
+                            <p class="FeaturedPC_Texts">CPU: Intel Core i5-4570</p>
+                            <p class="FeaturedPC_Texts">GPU: Intel HD Graphics 4600</p>
+                            <p class="FeaturedPC_Texts">RAM: 8 GB DDR3</p>
+                        </div>
+                        
+                        <div class="FeaturedPC_Individual_Boxes">
+                                    <img class="FeaturedPC_images" src="Featured_PC_images/Dell HP Small Factor.jpg" alt="HP Elitedesk 800 G3 Sff">
 
-                <section id="FeaturedPC_Container"> <!--Feature_PC Container START--> 
-                    <div class="FeaturedPC_Individual_Boxes">
-                                <img src="Featured_PC_images/Dell_OptiPlex_3020_SFF.png" alt="Dell Optiplex 3020 Sff">
-                    
-                        <p id="FeaturedPC_Texts">CPU: Intel Core i5-4570</p>
-                        <p id="FeaturedPC_Texts">GPU: Intel HD Graphics 4600</p>
-                        <p id="FeaturedPC_Texts">RAM: 8 GB DDR3</p>
-                    </div>
-                    
-                    <div class="FeaturedPC_Individual_Boxes">
-                                <img src="Featured_PC_images/Dell HP Small Factor.jpg" alt="HP Elitedesk 800 G3 Sff">
+                            <p class="FeaturedPC_Texts">CPU: Intel Core i5-6500</p>
+                            <p class="FeaturedPC_Texts">GPU: Intel HD Graphics 530</p>
+                            <p class="FeaturedPC_Texts">RAM: 8 GB DDR4-2133</p>
+                        </div>
+                        
+                        <div class="FeaturedPC_Individual_Boxes">
+                                    <img class="FeaturedPC_images" src="Featured_PC_images/Dell HP Small Factor.jpg" alt="HP EliteDesk 800 G4 Sff">
+                        
+                            <p class="FeaturedPC_Texts">CPU: Intel Core i5-8500 </p>
+                            <p class="FeaturedPC_Texts">GPU: Intel UHD Graphics 630 </p>
+                            <p class="FeaturedPC_Texts">RAM: 16 GB DDR4-2666 </p>
+                        </div>
 
-                        <p id="FeaturedPC_Texts">CPU: Intel Core i5-6500</p>
-                        <p id="FeaturedPC_Texts">GPU: Intel HD Graphics 530</p>
-                        <p id="FeaturedPC_Texts">RAM: 8 GB DDR4-2133</p>
-                    </div>
-                    
-                    <div class="FeaturedPC_Individual_Boxes">
-                                <img src="Featured_PC_images/Dell HP Small Factor.jpg" alt="HP EliteDesk 800 G4 Sff">
-                    
-                        <p id="FeaturedPC_Texts">CPU: Intel Core i5-8500 </p>
-                        <p id="FeaturedPC_Texts">GPU: Intel UHD Graphics 630 </p>
-                        <p id="FeaturedPC_Texts">RAM: 16 GB DDR4-2666 </p>
-                    </div>
+                        <div class="FeaturedPC_Individual_Boxes">
+                                    <img class="FeaturedPC_images" src="Featured_PC_images/Dell HP Small Factor SFF ProDesk 400 G9 SFF.jpg" alt="HP EliteDesk 800 G9 Sff">
+                        
+                            <p class="FeaturedPC_Texts">CPU: Intel Core i7-13700 </p>
+                            <p class="FeaturedPC_Texts">GPU: Intel UHD Graphics 770 </p>
+                            <p class="FeaturedPC_Texts">RAM: 16 GB DDR5 </p>
+                        </div>
 
-                    <div class="FeaturedPC_Individual_Boxes">
-                                <img src="Featured_PC_images/Dell HP Small Factor SFF ProDesk 400 G9 SFF.jpg" alt="HP EliteDesk 800 G9 Sff">
-                    
-                        <p id="FeaturedPC_Texts">CPU: Intel Core i7-13700 </p>
-                        <p id="FeaturedPC_Texts">GPU: Intel UHD Graphics 770 </p>
-                        <p id="FeaturedPC_Texts">RAM: 16 GB DDR5 </p>
-                    </div>
+                        <div class="FeaturedPC_Individual_Boxes">
+                                    <img class="FeaturedPC_images" src="Featured_PC_images/Dell HP Small Factor SFF ProDesk 400 G9 SFF.jpg" alt="HP ProDesk 400 G9 Sff">
 
-                    <div class="FeaturedPC_Individual_Boxes">
-                                <img src="Featured_PC_images/Dell HP Small Factor SFF ProDesk 400 G9 SFF.jpg" alt="HP ProDesk 400 G9 Sff">
-
-                        <p id="FeaturedPC_Texts">CPU: Intel Core i5-12500</p>
-                        <p id="FeaturedPC_Texts">GPU: Intel UHD Graphics 770</p>
-                        <p id="FeaturedPC_Texts">RAM: 8 GB DDR4</p>
-                    </div>
-                </section> <!--Feature_PC Container END--> 
-
-            </section> <!--Feature_PC Section END-->
+                            <p class="FeaturedPC_Texts">CPU: Intel Core i5-12500</p>
+                            <p class="FeaturedPC_Texts">GPU: Intel UHD Graphics 770</p>
+                            <p class="FeaturedPC_Texts">RAM: 8 GB DDR4</p>
+                        </div>
+                    </div> <!--Feature_PC Container END--> 
+                </div>
+            </div> <!--Feature_PC Section END-->
             
-            <section>
-                <h3>BUDGET PCS FOR OFFICES AND GAMING ENVIRONMENT</h3>
-                <p>We make pre-built and customized pcs for people who are looking for a fast and reliable shop where they can choose a pc under a minute and deliver it in the same day.</p>
+            <section id="Short-Information-to-PCKREUGERZ">
 
-                <img src="Gaming_PC" alt="Gaming_PC">
+                <h2>BUDGET PCS FOR OFFICES AND GAMING ENVIRONMENT</h2>
+
+                <div class="Info-Container">
+
+                    <div class="Info-Image">
+                        <img src="Gaming_PC.png" alt="Gaming_PC">
+                    </div>
+
+                    <div class="Info-Text">
+                        <p>
+                            We make pre-built and customized pcs for people who are looking
+                            for a fast and reliable shop where they can choose a pc under a
+                            minute and deliver it in the same day.
+                        </p>
+                    </div>
+
+                </div>
+
             </section>
         </main>
 
         <footer>
             <hr>
-            <a href="About_Us.html">About Us</a>
+            <a href="About.html">About Us</a>
             <a href="Contact.html">Contact</a>
             <p>PC Kruegerz™ • 2026</p>
         </footer>
