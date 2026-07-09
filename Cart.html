@@ -1,127 +1,152 @@
-<main>
+<!DOCTYPE html>
+<html lang="en">
 
-    <section id="Cart_Header">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | PC Kreugerz</title>
 
-        <h2>SHOPPING CART</h2>
+    <link rel="stylesheet" href="Cart.css">
+</head>
 
-        <p>
-            Review the items you've selected before proceeding to checkout.
-        </p>
+<body>
 
-    </section>
+    <header>
+//navigation bar content goes here
+    </header>
 
-    <section id="Cart_Content">
+    <main>
 
-        <div id="Cart_Container">
+        <section id="Cart_Header">
 
-            <h3>Your Cart</h3>
+            <h2>SHOPPING CART</h2>
 
-            <div id="Cart_Items">
+            <p>
+                Review the items you've selected before proceeding to checkout.
+            </p>
 
-                <div class="Empty_Cart">
+        </section>
 
-                    <h4>Your cart is currently empty.</h4>
+        <section id="Cart_Content">
 
-                    <p>
-                        Browse our collection and find the perfect pre-built
-                        desktop for your setup.
-                    </p>
+            <div id="Cart_Container">
 
-                    <a href="Index.html" id="Continue_Shopping">
-                        CONTINUE SHOPPING
-                    </a>
+                <h3>Your Cart</h3>
+
+                <div id="Cart_Items">
+
+                    <div class="Empty_Cart">
+
+                        <h4>Your cart is currently empty.</h4>
+
+                        <p>
+                            Browse our collection and find the perfect pre-built
+                            desktop for your setup.
+                        </p>
+
+                        <a href="index.html" id="Continue_Shopping">
+                            CONTINUE SHOPPING
+                        </a>
+
+                    </div>
 
                 </div>
 
             </div>
 
-        </div>
+            <div id="Cart_Summary">
 
-        <div id="Cart_Summary">
+                <h3>Order Summary</h3>
 
-            <h3>Order Summary</h3>
+                <div class="Summary_Row">
+                    <span>Items</span>
+                    <span>0</span>
+                </div>
 
-            <div class="Summary_Row">
-                <span>Items</span>
-                <span>0</span>
-            </div>
+                <div class="Summary_Row">
+                    <span>Subtotal</span>
+                    <span>₱0.00</span>
+                </div>
 
-            <div class="Summary_Row">
-                <span>Subtotal</span>
-                <span>₱0.00</span>
-            </div>
+                <div class="Summary_Row">
+                    <span>Shipping</span>
+                    <span>Calculated at Checkout</span>
+                </div>
 
-            <div class="Summary_Row">
-                <span>Shipping</span>
-                <span>Calculated at Checkout</span>
-            </div>
+                <hr>
 
-            <hr>
+                <div class="Summary_Row Total">
+                    <span>Total</span>
+                    <span>₱0.00</span>
+                </div>
 
-            <div class="Summary_Row Total">
-                <span>Total</span>
-                <span>₱0.00</span>
-            </div>
-
-            <button disabled>
-                PROCEED TO CHECKOUT
-            </button>
-
-        </div>
-
-    </section>
-
-    <section id="Recommendations">
-
-        <h2>You May Also Like</h2>
-
-        <div id="Recommendation_Container">
-
-            <div class="Recommendation_Card">
-
-                <img src="Featured_PC_images/Dell_OptiPlex_3020_SFF.png" alt="PC">
-
-                <h4>Recommended Product</h4>
-
-                <p>
-                    This area will display recommended pre-built PCs based on
-                    available products.
-                </p>
-
-                <a href="#">VIEW DETAILS</a>
+                <button type="button" disabled>
+                    PROCEED TO CHECKOUT
+                </button>
 
             </div>
 
-            <div class="Recommendation_Card">
+        </section>
 
-                <img src="Featured_PC_images/Dell HP Small Factor.jpg" alt="PC">
+        <section id="Recommendations">
 
-                <h4>Recommended Product</h4>
+            <h2>You May Also Like</h2>
 
-                <p>
-                    Additional recommendations will appear here.
-                </p>
+            <div id="Recommendation_Container">
 
-                <a href="#">VIEW DETAILS</a>
+                <div class="Recommendation_Card">
+
+                    <img src="Featured_PC_images/Dell_OptiPlex_3020_SFF.png" alt="Dell OptiPlex 3020 SFF">
+
+                    <h4>Recommended Product</h4>
+
+                    <p>
+                        This area will display recommended pre-built PCs based on
+                        available products.
+                    </p>
+
+                    <a href="#">VIEW DETAILS</a>
+
+                </div>
+
+                <div class="Recommendation_Card">
+
+                    <img src="Featured_PC_images/Dell HP Small Factor.jpg" alt="HP Small Form Factor">
+
+                    <h4>Recommended Product</h4>
+
+                    <p>
+                        Additional recommendations will appear here.
+                    </p>
+
+                    <a href="#">VIEW DETAILS</a>
+
+                </div>
+
+                <div class="Recommendation_Card">
+
+                    <img src="Featured_PC_images/Dell HP Small Factor SFF ProDesk 400 G9 SFF.jpg" alt="HP ProDesk 400 G9 SFF">
+
+                    <h4>Recommended Product</h4>
+
+                    <p>
+                        Products can be randomly generated by the backend.
+                    </p>
+
+                    <a href="#">VIEW DETAILS</a>
+
+                </div>
 
             </div>
 
-            <div class="Recommendation_Card">
+        </section>
 
-                <img src="Featured_PC_images/Dell HP Small Factor SFF ProDesk 400 G9 SFF.jpg" alt="PC">
+    </main>
 
-                <h4>Recommended Product</h4>
+    <footer>
+//footer content goes here
+    </footer>
 
-                <p>
-                    Products can be randomly generated by the backend.
-                </p>
+</body>
 
-                <a href="#">VIEW DETAILS</a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-</main>
+</html>
