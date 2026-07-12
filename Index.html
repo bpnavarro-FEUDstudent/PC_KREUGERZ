@@ -5,25 +5,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PC Kreugerz</title>
         
-        <link rel="stylesheet" href="Index.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="general_style.css">
     </head>
 
     <body>
         <header>
             <nav>
-                <img src="PC Kreugerz Logo.png" alt="PC Kreugerz Logo">
-                <h1>PC KREUGERZ</h1>
+                <div class="nav-brand">
+                    <a href="index.html" class="logo-link">
+                        <img src="pc kreugerz logo.png" alt="PC Kreugerz Logo">
+                    </a> 
+                    <h1>PC KREUGERZ</h1>
+                </div>
 
-                <a href="Cart.html">
-                    <img src="Icons/Cart_Icon.png" alt="Cart_Icon">
-                </a>
-                <a href="Menu.html">
-                    <img src="Icons/Menu_Icon.png" alt="Menu_Icon">
-                </a>
-                <a href="Search.html">
-                    <img src="Icons/Search_Icon.png" alt="Search_Icon">
-                </a>
+                <div class="nav-icons">
+                    <a href="cart.html">
+                        <img src="icons/cart_icon.png" alt="Cart_Icon">
+                    </a>
+                    <a href="search.html">
+                        <img src="icons/search_icon.png" alt="Search_Icon">
+                    </a> 
+
+                    <div class="menu-container">
+                        <img src="icons/menu_icon.png" alt="Menu Icon" id="menu-btn" class="menu-icon">
+
+                        <div class="dropdown-menu" id="dropdown-menu">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About Us</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </header>
 
@@ -36,54 +49,57 @@
 
             
             <div class="FeaturedPC">
+
                 <h2>Featured PCS</h2>
 
                 <!-- Carosel here/Hero slider -->
 
                 <div class="FeaturedPC_slider">
+
                     <button id="prev">Previous</button>
                     <button id="next">Next</button>
-                    <div class="FeaturedPC_Container"> <!--Feature_PC Container START--> 
-                        <div class="FeaturedPC_Individual_Boxes">
-                                    <img class="FeaturedPC_images" src="Featured_PC_images/Dell_OptiPlex_3020_SFF.png" alt="Dell Optiplex 3020 Sff">
-                        
-                            <p class="FeaturedPC_Texts">CPU: Intel Core i5-4570</p>
-                            <p class="FeaturedPC_Texts">GPU: Intel HD Graphics 4600</p>
-                            <p class="FeaturedPC_Texts">RAM: 8 GB DDR3</p>
-                        </div>
-                        
-                        <div class="FeaturedPC_Individual_Boxes">
-                                    <img class="FeaturedPC_images" src="Featured_PC_images/Dell HP Small Factor.jpg" alt="HP Elitedesk 800 G3 Sff">
 
-                            <p class="FeaturedPC_Texts">CPU: Intel Core i5-6500</p>
-                            <p class="FeaturedPC_Texts">GPU: Intel HD Graphics 530</p>
-                            <p class="FeaturedPC_Texts">RAM: 8 GB DDR4-2133</p>
-                        </div>
-                        
-                        <div class="FeaturedPC_Individual_Boxes">
-                                    <img class="FeaturedPC_images" src="Featured_PC_images/Dell HP Small Factor.jpg" alt="HP EliteDesk 800 G4 Sff">
-                        
-                            <p class="FeaturedPC_Texts">CPU: Intel Core i5-8500 </p>
-                            <p class="FeaturedPC_Texts">GPU: Intel UHD Graphics 630 </p>
-                            <p class="FeaturedPC_Texts">RAM: 16 GB DDR4-2666 </p>
-                        </div>
+                        <div class="FeaturedPC_Container"> <!--Feature_PC Container START--> 
+                            <div class="FeaturedPC_Individual_Boxes">
+                                        <img class="FeaturedPC_images" src="featured_pc_images/Dell_OptiPlex_3020_SFF.png" alt="Dell Optiplex 3020 Sff">
+                            
+                                <p class="FeaturedPC_Texts">CPU: Intel Core i5-4570</p>
+                                <p class="FeaturedPC_Texts">GPU: Intel HD Graphics 4600</p>
+                                <p class="FeaturedPC_Texts">RAM: 8 GB DDR3</p>
+                            </div>
+                            
+                            <div class="FeaturedPC_Individual_Boxes">
+                                        <img class="FeaturedPC_images" src="featured_pc_images/Dell HP Small Factor.jpg" alt="HP Elitedesk 800 G3 Sff">
 
-                        <div class="FeaturedPC_Individual_Boxes">
-                                    <img class="FeaturedPC_images" src="Featured_PC_images/Dell HP Small Factor SFF ProDesk 400 G9 SFF.jpg" alt="HP EliteDesk 800 G9 Sff">
-                        
-                            <p class="FeaturedPC_Texts">CPU: Intel Core i7-13700 </p>
-                            <p class="FeaturedPC_Texts">GPU: Intel UHD Graphics 770 </p>
-                            <p class="FeaturedPC_Texts">RAM: 16 GB DDR5 </p>
-                        </div>
+                                <p class="FeaturedPC_Texts">CPU: Intel Core i5-6500</p>
+                                <p class="FeaturedPC_Texts">GPU: Intel HD Graphics 530</p>
+                                <p class="FeaturedPC_Texts">RAM: 8 GB DDR4-2133</p>
+                            </div>
+                            
+                            <div class="FeaturedPC_Individual_Boxes">
+                                        <img class="FeaturedPC_images" src="featured_pc_images/Dell HP Small Factor.jpg" alt="HP EliteDesk 800 G4 Sff">
+                            
+                                <p class="FeaturedPC_Texts">CPU: Intel Core i5-8500 </p>
+                                <p class="FeaturedPC_Texts">GPU: Intel UHD Graphics 630 </p>
+                                <p class="FeaturedPC_Texts">RAM: 16 GB DDR4-2666 </p>
+                            </div>
 
-                        <div class="FeaturedPC_Individual_Boxes">
-                                    <img class="FeaturedPC_images" src="Featured_PC_images/Dell HP Small Factor SFF ProDesk 400 G9 SFF.jpg" alt="HP ProDesk 400 G9 Sff">
+                            <div class="FeaturedPC_Individual_Boxes">
+                                        <img class="FeaturedPC_images" src="featured_pc_images/Dell HP Small Factor SFF ProDesk 400 G9 SFF.jpg" alt="HP EliteDesk 800 G9 Sff">
+                            
+                                <p class="FeaturedPC_Texts">CPU: Intel Core i7-13700 </p>
+                                <p class="FeaturedPC_Texts">GPU: Intel UHD Graphics 770 </p>
+                                <p class="FeaturedPC_Texts">RAM: 16 GB DDR5 </p>
+                            </div>
 
-                            <p class="FeaturedPC_Texts">CPU: Intel Core i5-12500</p>
-                            <p class="FeaturedPC_Texts">GPU: Intel UHD Graphics 770</p>
-                            <p class="FeaturedPC_Texts">RAM: 8 GB DDR4</p>
-                        </div>
-                    </div> <!--Feature_PC Container END--> 
+                            <div class="FeaturedPC_Individual_Boxes">
+                                        <img class="FeaturedPC_images" src="featured_pc_images/Dell HP Small Factor SFF ProDesk 400 G9 SFF.jpg" alt="HP ProDesk 400 G9 Sff">
+
+                                <p class="FeaturedPC_Texts">CPU: Intel Core i5-12500</p>
+                                <p class="FeaturedPC_Texts">GPU: Intel UHD Graphics 770</p>
+                                <p class="FeaturedPC_Texts">RAM: 8 GB DDR4</p>
+                            </div>
+                        </div> <!--Feature_PC Container END--> 
                 </div>
             </div> <!--Feature_PC Section END-->
             
@@ -94,7 +110,7 @@
                 <div class="Info-Container">
 
                     <div class="Info-Image">
-                        <img src="Gaming_PC.png" alt="Gaming_PC">
+                        <img src="gaming_pc.png" alt="Gaming_PC">
                     </div>
 
                     <div class="Info-Text">
@@ -111,12 +127,10 @@
         </main>
 
         <footer>
-            <hr>
-            <a href="About.html">About Us</a>
-            <a href="Contact.html">Contact</a>
             <p>PC Kruegerz™ • 2026</p>
         </footer>
-        <script src="javascrip.js"></script>
+        <script src="general_style.css"></script>
+        <script src="menubtn.js"></script>
     </body>
     
 </html>

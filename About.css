@@ -1,4 +1,4 @@
-#About_Header{
+#Main_Header{
 
     text-align:center;
     padding:80px 20px 60px;
@@ -6,7 +6,7 @@
 
 }
 
-#About_Header h2{
+#Main_Header h2{
 
     color:#ffffff;
     font-size:4rem;
@@ -15,7 +15,7 @@
 
 }
 
-#About_Header p{
+#Main_Header p{
 
     color:#cfcfcf;
     font-size:1.2rem;

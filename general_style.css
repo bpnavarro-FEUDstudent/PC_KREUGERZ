@@ -8,7 +8,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     background-image:  url("abstract_techno_background_with_flowing_particles_1609.jpg");
     background-size: cover;
     background-position: center;
@@ -21,33 +21,100 @@ body{
    NAVIGATION
 ========================== */
 
-nav{
-    background: #111111;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 70px; 
+nav {
+    background: #111111; 
     border-bottom: 3px solid #FF1C1C;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
 }
 
-nav h1{
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;   
+}
+
+nav h1 {
     color: #FF1C1C;
-    font-size: 32px;
     letter-spacing: 2px;
+    font-size: clamp(20px, 4vw, 32px);
+    text-align: left;
 }
 
-nav a{
-    margin-left: 15px;
+nav a {
+    width: clamp(30px, 4vw, 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-nav img{
-    width: 35px;
+.logo-link img {
+    width: clamp(30px, 5vw, 45px);
+    height: auto;
+}
+
+.nav-icons img {
+    width: clamp(25px, 4vw, 35px);
+    height: auto;
     transition: .3s;
 }
 
-nav img:hover{
+.nav-icons img:hover,
+.logo-link img:hover {
     transform: scale(1.15);
 }
+
+/*menu drop down*/
+.menu-container {
+    position: relative;
+}
+
+.menu-icon {
+    width: 25px;
+    height: auto;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+
+    background: #111111;
+    border: 2px solid #FF1C1C;
+    border-radius: 10px;
+    min-width: 180px;
+
+    overflow: hidden;
+}
+
+.dropdown-menu a {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background: #FF1C1C;
+}
+.show {
+    display: block;
+}
+/* ==========================
+   END OF NAVIGATION
+========================== */
+
 
 /* ==========================
    MAIN HEADER
@@ -74,62 +141,7 @@ nav img:hover{
 }
 
 /* ==========================
-   FEATURED PCS
-========================== */
-
-#FeaturedPC{
-    padding: 70px;
-}
-
-#FeaturedPC h3{
-    text-align: center;
-    font-size: 34px;
-    margin-bottom: 50px;
-    color: #FF1C1C;
-}
-
-#FeaturedPC_Container{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-/* ==========================
-   PC BOXES
-========================== */
-
-.FeaturedPC_Individual_Boxes{
-    width: 260px;
-    background: #111111;
-    border: 2px solid #FF1C1C;
-    border-radius: 15px;
-    padding: 20px;
-    transition: .3s;
-}
-
-.FeaturedPC_Individual_Boxes:hover{
-    transform: translateY(-10px);
-    box-shadow: 0px 0px 25px #FF1C1C;
-}
-
-.FeaturedPC_Individual_Boxes img{
-    width: 100%;
-    height: 180px;
-    background: #222;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-#FeaturedPC_Texts{
-    margin: 10px 0;
-    color: white;
-    font-size: 17px;
-}
-
-/* ==========================
-   SECOND SECTION
+   SECOND SECTION CHANGE THIS
 ========================== */
 
 main section:last-child{
@@ -157,7 +169,7 @@ main section:last-child img{
     margin-top: 40px;
     width: 450px;
     max-width: 100%;
-    height: 250px;
+    height: auto;
     background: #222;
     border: 2px solid #FF1C1C;
     border-radius: 10px;

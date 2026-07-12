@@ -5,27 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart | PC Kreugerz</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Cart.css">
+    
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="general_style.css">
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <img src="PC Kreugerz Logo.png" alt="PC Kreugerz Logo">
-            <h1>PC KREUGERZ</h1>
+            <nav>
+                <div class="nav-brand">
+                    <a href="index.html" class="logo-link">
+                        <img src="pc kreugerz logo.png" alt="PC Kreugerz Logo">
+                    </a> 
+                    <h1>PC KREUGERZ</h1>
+                </div>
 
-                <a href="Cart.html">
-                    <img src="Icons/Cart_Icon.png" alt="Cart_Icon">
-                </a>
-                <a href="Menu.html">
-                    <img src="Icons/Menu_Icon.png" alt="Menu_Icon">
-                </a>
-                <a href="Search.html">
-                    <img src="Icons/Search_Icon.png" alt="Search_Icon">
-                </a>
-        </nav>
+                <div class="nav-icons">
+                    <a href="cart.html">
+                        <img src="icons/cart_icon.png" alt="Cart_Icon">
+                    </a>
+                    <a href="search.html">
+                        <img src="icons/search_icon.png" alt="Search_Icon">
+                    </a> 
+
+                    <div class="menu-container">
+                        <img src="icons/menu_icon.png" alt="Menu Icon" id="menu-btn" class="menu-icon">
+
+                        <div class="dropdown-menu" id="dropdown-menu">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About Us</a>
+                            <a href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
     </header>
 
     <main>
@@ -41,13 +55,11 @@
         </section>
 
         <section id="Cart_Content">
-
             <div id="Cart_Container">
 
                 <h3>Your Cart</h3>
 
                 <div id="Cart_Items">
-
                     <div class="Empty_Cart">
 
                         <h4>Your cart is currently empty.</h4>
@@ -62,9 +74,7 @@
                         </a>
 
                     </div>
-
                 </div>
-
             </div>
 
             <div id="Cart_Summary">
@@ -98,7 +108,6 @@
                 </button>
 
             </div>
-
         </section>
 
         <section id="Recommendations">
@@ -106,10 +115,9 @@
             <h2>You May Also Like</h2>
 
             <div id="Recommendation_Container">
-
                 <div class="Recommendation_Card">
 
-                    <img src="Featured_PC_images/Dell_OptiPlex_3020_SFF.png" alt="Dell OptiPlex 3020 SFF">
+                        <img src="featured_pc_images/Dell_OptiPlex_3020_SFF.png" alt="Dell OptiPlex 3020 SFF">
 
                     <h4>Recommended Product</h4>
 
@@ -124,7 +132,7 @@
 
                 <div class="Recommendation_Card">
 
-                    <img src="Featured_PC_images/Dell HP Small Factor.jpg" alt="HP Small Form Factor">
+                        <img src="featured_pc_images/Dell HP Small Factor.jpg" alt="HP Small Form Factor">
 
                     <h4>Recommended Product</h4>
 
@@ -138,7 +146,7 @@
 
                 <div class="Recommendation_Card">
 
-                    <img src="Featured_PC_images/Dell HP Small Factor SFF ProDesk 400 G9 SFF.jpg" alt="HP ProDesk 400 G9 SFF">
+                        <img src="featured_pc_images/Dell HP Small Factor SFF ProDesk 400 G9 SFF.jpg" alt="HP ProDesk 400 G9 SFF">
 
                     <h4>Recommended Product</h4>
 
@@ -149,20 +157,16 @@
                     <a href="#">VIEW DETAILS</a>
 
                 </div>
-
             </div>
-
         </section>
 
     </main>
 
     <footer>
-            <a href="Index.html">Main Page</a>
-            <a href="About.html">About Us</a>
-            <a href="Contact.html">Contact</a>
             <p>PC Kruegerz™ • 2026</p>
     </footer>
 
+        <script src="menubtn.js"></script>
 </body>
 
 </html>
