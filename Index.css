@@ -34,48 +34,55 @@
 }
 
 .FeaturedPC h2 {
+    
     color: white;
     font-size: 3rem;
     text-align: center;
     margin-bottom: 50px;
+
 }
 
 .FeaturedPC_slider {
 
-    width:100%;
-    overflow:hidden;
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
 
 }
 
 .FeaturedPC_Container {
 
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    display:flex;
-    gap:20px;
-    transition:transform .5s ease;
-
+    gap: 20px;
+    transition: transform 0.5s ease;
+    
 }
 
 .FeaturedPC_Individual_Boxes {
 
-    min-width:300px;
-    background: #141414;
+    width: 300px;
+    flex-shrink: 0;
+
+    background: #1b1b1b;
+    border-radius: 15px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 
+    padding: 25px;
+
 }
 
 .FeaturedPC_images {
 
-    height: 150px;
-    width: 150px;
-    border-radius: 10px;
+    width: 220px;
+    height: 280px;
 
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 .FeaturedPC_Texts {
@@ -90,6 +97,29 @@
 
 }
 
+#prev,
+#next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 10;
+
+    background: #222;
+    color: white;
+
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
 
 
 
