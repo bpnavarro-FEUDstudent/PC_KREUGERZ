@@ -91,8 +91,8 @@
 }
 @media (max-width: 768px){
     .FeaturedPC_Individual_Boxes{
-        flex: 0 0 100%;
-        max-width: 350px;
+        flex: 0 0 50%;
+        max-width: 280px;
     }
 }
 

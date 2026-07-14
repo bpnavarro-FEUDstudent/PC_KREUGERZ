@@ -134,8 +134,20 @@
     border:none;
     font-size:1rem;
     font-weight:bold;
-    cursor:not-allowed;
+
+}
+
+#Cart_Summary button:disabled{
+
     opacity:.5;
+    cursor:not-allowed;
+
+}
+
+#Cart_Summary button:not(:disabled){
+
+    opacity:1;
+    cursor:pointer;
 
 }
 

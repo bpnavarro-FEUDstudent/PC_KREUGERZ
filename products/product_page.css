@@ -231,6 +231,16 @@ nav h1{
 
 }
 
+#Qty_Input::-webkit-outer-spin-button,
+#Qty_Input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#Qty_Input {
+    -moz-appearance: textfield;
+}
+
 #Quantity_Box button{
 
     width:45px;
