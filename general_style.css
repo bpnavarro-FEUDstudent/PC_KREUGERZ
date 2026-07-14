@@ -172,15 +172,6 @@ main section:last-child p{
     font-size: 18px;
 }
 
-main section:last-child img{
-    margin-top: 40px;
-    width: 450px;
-    max-width: 100%;
-    height: auto;
-    background: #222;
-    border: 2px solid #FF1C1C;
-    border-radius: 10px;
-}
 
 /* ==========================
    FOOTER
