@@ -3,7 +3,7 @@
 ========================== */
 @font-face {
     font-family: "Bank Gothic";
-    src: url("BankGothic/BankGothicMediumBT.ttf") format("truetype");
+    src: url("bank_gothic/BankGothicMediumBT.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
