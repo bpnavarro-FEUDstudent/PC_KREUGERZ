@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Inter, system-ui, sans-serif;
+    background-image: url("abstract_techno_background_with_flowing_particles_1609.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Contact Section */
+
+.contact-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.contact-card {
+    width: min(100%, 720px);
+    background: #0a0a0a;
+    border: 2px solid #FF1C1C;
+    border-radius: 28px;
+    box-shadow: 0 30px 80px rgba(255,28,28,.18);
+    overflow: hidden;
+}
+
+/* Contact Header */
+
+.contact-header {
+    padding: 2rem;
+    background: black;
+    border-bottom: 1px solid rgba(255,28,28,.2);
+}
+
+.contact-header h1 {
+    margin: 0;
+    font-size: clamp(2rem,4vw,2.7rem);
+    letter-spacing: .06em;
+}
+
+.contact-header p {
+    margin-top: .75rem;
+    color: #d8d8d8;
+    line-height: 1.7;
+}
+
+/* Form */
+
+.contact-card form {
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-card label {
+    font-weight: 600;
+}
+
+.contact-card input,
+.contact-card textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255,28,28,.2);
+    background: black;
+    color: white;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+    border-color: #FF1C1C;
+    box-shadow: 0 0 0 4px rgba(255,28,28,.12);
+}
+
+.contact-card textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.contact-card button {
+    width: fit-content;
+    padding: 1rem 1.8rem;
+    border: none;
+    border-radius: 999px;
+    background: #FF1C1C;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.contact-card button:hover {
+    background: #e01212;
+    transform: translateY(-2px);
+}
