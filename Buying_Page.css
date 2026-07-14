@@ -1,0 +1,581 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+body{
+
+    background:#111;
+    color:white;
+
+}
+
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#181818;
+
+}
+
+nav img{
+
+    width:70px;
+
+}
+
+nav h1{
+
+    font-size:2rem;
+    color:white;
+    letter-spacing:2px;
+
+}
+
+#Navigation{
+
+    display:flex;
+    gap:25px;
+
+}
+
+#Navigation img{
+
+    width:35px;
+    transition:.3s;
+
+}
+
+#Navigation img:hover{
+
+    transform:scale(1.1);
+
+}
+
+#Breadcrumb{
+
+    width:90%;
+    margin:40px auto;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:1rem;
+
+}
+
+#Breadcrumb a{
+
+    color:#d81616;
+    text-decoration:none;
+
+}
+
+#Breadcrumb p{
+
+    color:white;
+
+}
+
+#Product_Details{
+
+    width:90%;
+    margin:50px auto;
+    display:flex;
+    gap:60px;
+    flex-wrap:wrap;
+
+}
+
+#Product_Image{
+
+    flex:1;
+    min-width:350px;
+    background:#1b1b1b;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+
+}
+
+#Product_Image img{
+
+    width:100%;
+    max-width:450px;
+
+}
+
+#Product_Info{
+
+    flex:1;
+    min-width:350px;
+
+}
+
+#Product_Info h2{
+
+    font-size:3rem;
+    margin-bottom:20px;
+
+}
+
+#Price{
+
+    font-size:2.3rem;
+    color:#d81616;
+    margin-bottom:20px;
+
+}
+
+#Availability{
+
+    color:#39d353;
+    font-weight:bold;
+    margin-bottom:30px;
+
+}
+
+#Availability span{
+
+    font-size:1.3rem;
+
+}
+
+#Description{
+
+    margin-bottom:40px;
+
+}
+
+#Description h3{
+
+    color:#d81616;
+    margin-bottom:15px;
+
+}
+
+#Description p{
+
+    line-height:1.8;
+    color:#d9d9d9;
+
+}
+
+#Specifications{
+
+    margin-bottom:40px;
+
+}
+
+#Specifications h3{
+
+    color:#d81616;
+    margin-bottom:20px;
+
+}
+
+#Specifications table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+#Specifications td{
+
+    padding:15px;
+    border-bottom:1px solid #333;
+
+}
+
+#Specifications td:first-child{
+
+    font-weight:bold;
+    width:40%;
+    color:white;
+
+}
+
+#Specifications td:last-child{
+
+    color:#d0d0d0;
+
+}
+
+#Quantity{
+
+    margin-bottom:40px;
+
+}
+
+#Quantity label{
+
+    display:block;
+    margin-bottom:15px;
+    font-size:1.1rem;
+
+}
+
+#Quantity_Box{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+#Quantity_Box button{
+
+    width:45px;
+    height:45px;
+    background:#d81616;
+    border:none;
+    color:white;
+    font-size:1.3rem;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+#Quantity_Box button:hover{
+
+    background:#b81212;
+
+}
+
+#Quantity_Box input{
+
+    width:70px;
+    height:45px;
+    text-align:center;
+    font-size:1.1rem;
+    border:none;
+    outline:none;
+    background:#202020;
+    color:white;
+
+}
+
+#Buttons{
+
+    display:flex;
+    gap:20px;
+
+}
+
+#Add_To_Cart,
+#Buy_Now{
+
+    flex:1;
+    padding:18px;
+    border:none;
+    font-size:1rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+#Add_To_Cart{
+
+    background:#2b2b2b;
+    color:white;
+    border:2px solid #d81616;
+
+}
+
+#Add_To_Cart:hover{
+
+    background:#d81616;
+
+}
+
+#Buy_Now{
+
+    background:#d81616;
+    color:white;
+
+}
+
+#Buy_Now:hover{
+
+    background:#b81212;
+
+}
+#Recommendations{
+
+    width:90%;
+    margin:100px auto;
+
+}
+
+.Recommendation_Title{
+
+    display:flex;
+    align-items:center;
+    gap:25px;
+    margin-bottom:50px;
+
+}
+
+.Recommendation_Title hr{
+
+    flex:1;
+    border:1px solid #444;
+
+}
+
+.Recommendation_Title h2{
+
+    color:white;
+    font-size:2.3rem;
+    letter-spacing:2px;
+
+}
+
+#Recommendation_Container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    gap:30px;
+
+}
+
+.Recommendation_Card{
+
+    background:#1b1b1b;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.3s;
+    border:1px solid #2b2b2b;
+
+}
+
+.Recommendation_Card:hover{
+
+    transform:translateY(-8px);
+    border-color:#d81616;
+
+}
+
+.Recommendation_Card img{
+
+    width:100%;
+    height:240px;
+    object-fit:contain;
+    background:#242424;
+    padding:20px;
+
+}
+
+.Recommendation_Card h3{
+
+    color:white;
+    margin:20px 20px 10px;
+
+}
+
+.Recommendation_Card p{
+
+    color:#cfcfcf;
+    margin:0 20px 25px;
+    line-height:1.7;
+
+}
+
+.Recommendation_Card a{
+
+    display:block;
+    text-align:center;
+    padding:15px;
+    background:#d81616;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+
+}
+
+.Recommendation_Card a:hover{
+
+    background:#b81212;
+
+}
+
+footer{
+
+    margin-top:100px;
+    background:#181818;
+    padding:50px 8%;
+
+}
+
+#Footer_Content{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:40px;
+    margin:40px 0;
+
+}
+
+#Footer_Content h3{
+
+    color:#d81616;
+    margin-bottom:20px;
+
+}
+
+#Footer_Content p{
+
+    color:#d0d0d0;
+    line-height:1.8;
+
+}
+
+#Footer_Content a{
+
+    display:block;
+    color:#d0d0d0;
+    text-decoration:none;
+    margin-bottom:10px;
+    transition:.3s;
+
+}
+
+#Footer_Content a:hover{
+
+    color:#d81616;
+
+}
+
+#Copyright{
+
+    text-align:center;
+    color:#9e9e9e;
+    margin-top:30px;
+    font-size:.95rem;
+
+}
+
+@media(max-width:1000px){
+
+    nav{
+
+        padding:20px 30px;
+
+    }
+
+    #Product_Details{
+
+        flex-direction:column;
+
+    }
+
+    #Product_Image{
+
+        min-width:100%;
+
+    }
+
+    #Product_Info{
+
+        min-width:100%;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    nav h1{
+
+        font-size:1.4rem;
+
+    }
+
+    nav img{
+
+        width:55px;
+
+    }
+
+    #Navigation{
+
+        gap:15px;
+
+    }
+
+    #Navigation img{
+
+        width:28px;
+
+    }
+
+    #Breadcrumb{
+
+        flex-wrap:wrap;
+        font-size:.9rem;
+
+    }
+
+    #Product_Info h2{
+
+        font-size:2.1rem;
+
+    }
+
+    #Price{
+
+        font-size:1.8rem;
+
+    }
+
+    #Buttons{
+
+        flex-direction:column;
+
+    }
+
+    .Recommendation_Title h2{
+
+        font-size:1.8rem;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    #Product_Image{
+
+        padding:20px;
+
+    }
+
+    #Product_Image img{
+
+        max-width:280px;
+
+    }
+
+    #Quantity_Box{
+
+        justify-content:center;
+
+    }
+
+    #Footer_Content{
+
+        text-align:center;
+
+    }
+
+}
