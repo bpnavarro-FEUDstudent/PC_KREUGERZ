@@ -1,9 +1,13 @@
-// ===== Product Info for this page (only used on product page) =====
-const PRODUCT = {
-    id: "computer_1",
-    name: "Computer 1",
-    price: 500
-};
+// ===== Product Info (read from HTML instead of hardcoded) =====
+const purchaseBoxEl = document.getElementById("Purchase_Box");
+
+const PRODUCT = purchaseBoxEl ? {
+    id: purchaseBoxEl.dataset.id,
+    name: purchaseBoxEl.dataset.name,
+    price: parseFloat(purchaseBoxEl.dataset.price)
+} : null;
+
+//alert("test") just to check if the js is connected to the html
 
 // ===== Elements =====
 const qtyInput = document.getElementById("Qty_Input");
@@ -22,8 +26,8 @@ function saveCart(cart) {
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-// ===== Product Page Logic (only runs if these elements exist) =====
-if (qtyInput && decreaseBtn && increaseBtn && addToCartBtn && buyNowBtn) {
+// ===== Product Page Logic (only runs if these elements + PRODUCT exist) =====
+if (qtyInput && decreaseBtn && increaseBtn && addToCartBtn && buyNowBtn && PRODUCT) {
 
     decreaseBtn.addEventListener("click", () => {
         let qty = parseInt(qtyInput.value);
@@ -54,6 +58,7 @@ if (qtyInput && decreaseBtn && increaseBtn && addToCartBtn && buyNowBtn) {
         }
 
         saveCart(cart);
+        qtyInput.value = 1;
         alert(PRODUCT.name + " added to cart!");
     });
 
